@@ -34,13 +34,15 @@ createApp({
             this.impegno = "";
         },
         
-        cambioDone(){
-            this.done = true;
+        cambioDone(commissione){
+
+            commissione.done = true;
             console.log(this.done);
         },
 
         aggiungiClasse(commissione){
-            classe = "impegnoFatto";
+
+            let classe = "impegnoFatto";            
             if(commissione.done == true){
                 return classe;
             }
