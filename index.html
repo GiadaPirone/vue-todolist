@@ -12,11 +12,15 @@
 
     <div id="app">
 
-        <input v-model="impegno" type="text" placeholder="cose da ricordare">
+        <input v-model="impegno" type="text" @keyup.enter="aggiungiImpegni()" placeholder="cose da ricordare">
         <button @click="aggiungiImpegni()">Agg alla lista</button>
 
         <ul>
-            <li @click="cambioDone(commissione)":class="aggiungiClasse(commissione)" v-for="(commissione, i) in toDo">{{commissione.text}}</li>
+            <li @click="cambioDone(commissione)":class="aggiungiClasse(commissione)" v-for="(commissione, i) in toDo">
+                {{commissione.text}} 
+                <button >x</button>
+                <!-- @click="rimuoviImpegno()" -->
+            </li>
         </ul>
 
 

@@ -46,7 +46,11 @@ createApp({
             if(commissione.done == true){
                 return classe;
             }
-        }
+        },
+
+        // rimuoviImpegno(){
+        //     this.toDo.splice();
+        // }
        
     }
     
