@@ -16,7 +16,7 @@
         <button @click="aggiungiImpegni()">Agg alla lista</button>
 
         <ul>
-            <li @click="cambioDone()" :class="aggiungiClasse()" v-for="(commissione, i) in toDo">{{toDo[i].text}}</li>
+            <li @click="cambioDone(commissione)":class="aggiungiClasse(commissione)" v-for="(commissione, i) in toDo">{{commissione.text}}</li>
         </ul>
 
 

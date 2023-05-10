@@ -39,9 +39,9 @@ createApp({
             console.log(this.done);
         },
 
-        aggiungiClasse(){
+        aggiungiClasse(commissione){
             classe = "impegnoFatto";
-            if(this.done = true){
+            if(commissione.done == true){
                 return classe;
             }
         }
