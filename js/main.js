@@ -6,6 +6,7 @@ createApp({
         return{
            impegno: "",
            toDo: [
+                
                 {
                     text: "Andare a fare la spesa",
                     done: false,
@@ -26,7 +27,10 @@ createApp({
         
         aggiungiImpegni(){
             console.log(this.impegno);
-            this.toDo.unshift(this.impegno);
+            
+            const oggetto = {text: this.impegno, dome: false };
+            this.toDo.push(oggetto);
+            
         }
        
     }
