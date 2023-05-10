@@ -5,7 +5,7 @@ createApp({
     data(){
         return{
            
-            ToDo: [
+            toDo: [
                 {
                     text: "Andare a fare la spesa",
                     done: false,
