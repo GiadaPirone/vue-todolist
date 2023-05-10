@@ -32,7 +32,18 @@ createApp({
             this.toDo.push(oggetto);
 
             this.impegno = "";
-            
+        },
+        
+        cambioDone(){
+            this.done = true;
+            console.log(this.done);
+        },
+
+        aggiungiClasse(){
+            classe = "impegnoFatto";
+            if(this.done = true){
+                return classe;
+            }
         }
        
     }
