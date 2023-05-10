@@ -30,6 +30,8 @@ createApp({
             
             const oggetto = {text: this.impegno, dome: false };
             this.toDo.push(oggetto);
+
+            this.impegno = "";
             
         }
        
