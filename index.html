@@ -12,7 +12,8 @@
 
     <div id="app">
 
-        <input type="text" placeholder="cose da ricordare">
+        <input v-model="impegno" type="text" placeholder="cose da ricordare">
+        <button @click="aggiungiImpegni()">Agg alla lista</button>
 
         <ul>
             <li v-for="(commissione, i) in toDo">{{toDo[i].text}}</li>

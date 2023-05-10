@@ -4,8 +4,8 @@ createApp({
     
     data(){
         return{
-           
-            toDo: [
+           impegno: "",
+           toDo: [
                 {
                     text: "Andare a fare la spesa",
                     done: false,
@@ -21,7 +21,17 @@ createApp({
             ]
 
         }
+    },
+    methods:{
+        
+        aggiungiImpegni(){
+            console.log(this.impegno);
+            this.toDo.unshift(this.impegno);
+        }
+       
     }
     
 }).mount (`#app`)
+
+
 
